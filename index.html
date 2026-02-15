@@ -2,30 +2,88 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>EBC v0.1.1</title>
+<title>EBC v0.1.2</title>
 <style>
 body {
   margin: 0;
   background: #e6e6e6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+/* ===== タイトル ===== */
 h1 {
-  width: 1024px;      /* iPad固定 */
+  width: 1024px;
+  margin: 50px auto 30px auto;
   text-align: center;
-  font-size: 42px;
-  font-weight: 600;
-  color: #333333;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Times New Roman", "Hiragino Mincho ProN", serif;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+/* ===== 共通幅固定 ===== */
+section {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* ===== セクション見出し ===== */
+h2 {
+  font-size: 28px;
+  margin: 40px 0 20px 0;
+  color: #444;
+}
+
+/* ===== 各項目行 ===== */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* ===== 小見出し ===== */
+h3 {
   margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===== ボタン ===== */
+button {
+  height: 36px;
+  margin-left: 10px;
 }
 </style>
 </head>
 
 <body>
-  <h1>Emergency Broadcast Console</h1>
+
+<h1>Emergency Broadcast Console</h1>
+
+<section>
+  <h2>地震</h2>
+
+  <div class="item">
+    <h3>緊急地震速報（警報）</h3>
+    <div>
+      <button>再生</button>
+      <button>停止</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>緊急地震速報（予報）</h3>
+    <div>
+      <button>再生</button>
+      <button>停止</button>
+    </div>
+  </div>
+
+</section>
+
 </body>
 </html>
