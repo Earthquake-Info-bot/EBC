@@ -3,31 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[0.1.4]EBC - Lテロ</title>
+<title>[0.1.5]EBC - Lテロ</title>
 <style>
   body {
     margin: 0;
     background: transparent;
   }
 
-  /* 下部横バー（左→右グラデーション） */
+  /* 下部横バー */
   #bottom-bar {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: linear-gradient(to right, #1e3c72, #2980b9); /* 青の濃淡グラデ */
+    height: 80px; /* 少し細く */
+    background: linear-gradient(to right, #1e3c72, #2980b9);
   }
 
-  /* 左端縦バー（上→下グラデーション、横幅を太く） */
+  /* 左端縦バー（横幅太め、横バーと重ならないように） */
   #left-bar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 120px; /* 太めに変更 */
-    height: 100%;
-    background: linear-gradient(to bottom, #2980b9, #1e3c72); /* 横バーと同じ色グラデ */
+    width: 120px; /* 太め */
+    height: calc(100% - 80px); /* 横バーの高さを引いた分だけ縦に */
+    background: linear-gradient(to bottom, #1e3c72, #2980b9);
   }
 </style>
 </head>
